@@ -5,9 +5,12 @@ import React from 'react';
 export function Sum({ a = 0, b = 0 }) {
   const sum = a + b;
 
-  return <p>Sum of {a} and {b} is {sum}</p>;
+  return (
+    <p>
+      Sum of {a} and {b} is {sum}
+    </p>
+  );
 }
-
 
 <>
   <Sum a={2} b={3} />
