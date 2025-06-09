@@ -41,6 +41,8 @@
     "start": "mate-scripts start -l",
     "build": "mate-scripts build",
     "test": "mate-scripts test -l",
+    "test:ci": "cypress run --component --reporter mochawesome --reporter-options reportDir=raw_reports,overwrite=false,html=false,json=true",
+    "test:ci:e2e": "cypress run --e2e --reporter mochawesome --reporter-options reportDir=raw_reports,overwrite=false,html=false,json=true",
     "style-format": "npx stylelint 'src/**/*.scss' --fix --allow-empty-input",
     "lint-js": "mate-scripts lint -j",
     "lint-css": "mate-scripts lint -s",
